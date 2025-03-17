@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks 
+    RewriteEngine on 
+    RewriteBase /  
+    RewriteRule ^repositories/(.*)/info.json$ repositories/get-info.php?plugin=$1 [L,QSA] 
+</IfModule>
